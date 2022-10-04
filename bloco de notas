@@ -1,0 +1,11 @@
+para identar usar 2 espaços;
+datacenter:
+  local: Curitiba
+  funcionario: andre
+
+para fazer lista usar dois espaços e -;
+locais:
+  -Curitiba
+  -São Paulo
+
+

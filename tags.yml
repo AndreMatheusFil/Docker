@@ -1,0 +1,13 @@
+%TAG ! tag:host:andre:
+---
+host: andre 
+datacenter:
+  location: !ANDRE Curitiba
+  router: "42"
+
+---
+host: udemy
+datacenter:
+  location: Colorado
+  router: !!str 45
+  switch: !!int 23

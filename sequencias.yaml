@@ -1,0 +1,5 @@
+roles:
+  -webserver
+  -database
+
+roles2: [ webserver, dataabase ]

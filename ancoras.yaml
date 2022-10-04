@@ -1,0 +1,18 @@
+---
+host: andre
+datacenter:
+  location: &C Curitiba
+  router: 42
+roles:
+  - web
+  - dns
+--- 
+host: Marcos
+datacenter:
+  location: *C
+  router: 42
+roles: &ghost
+  - web
+  - dns
+---
+roles: *ghost

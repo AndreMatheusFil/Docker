@@ -3,7 +3,14 @@ datacenter:
   local: Curitiba
   funcionario: andre
 
-para fazer lista usar dois espaços e -;
+strings em YAML podem ser apresentadas sem '' ou "" para palavras porém para números que serão string será nescessário usar e tanto faz qual vc usar;
+
+strings:
+  -Curitiba
+  -'42'
+  -"55"
+
+para fazer lista usar dois espaços e - ( também chamado de sequência );
 locais:
   -Curitiba
   -São Paulo
@@ -27,4 +34,73 @@ datacenter: {  location:
   Curitiba,  router: 42  }
 roles: [ web, dns ]
 
+mapeamento no YAML é dado por uma chave-valor podendo ter mais de um valor para a mesma chave, a chave sempre deve ser única no arquivo;
 
+chave: valor
+
+host: andre
+  
+chave: chave( que também é um valor): valor
+
+datacenter:
+  location: Curitiba
+  router: 42
+
+Errado
+
+host: andre
+datacenter:
+  location: Curitiba
+  router: 42
+roles:
+  - web
+  - dns
+
+host: Marcos
+datacenter:
+  location: Curitiba
+  router: 42
+roles:
+  - web
+  - dns
+
+Certo
+
+host1: andre
+datacenter1:
+  location: Curitiba
+  router: 42
+roles1:
+  - web
+  - dns
+
+host2: Marcos
+datacenter2:
+  location: Curitiba
+  router: 42
+roles2:
+  - web
+  - dns
+
+para gerar duas configurações no mesmo arquivo podemos separar elas por ---;
+
+host: andre
+datacenter:
+  location: Curitiba
+  router: 42
+roles:
+  - web
+  - dns
+---  # <-- inicio da nova configuração
+host: Marcos
+datacenter:
+  location: Curitiba
+  router: 42
+roles:
+  - web
+  - dns
+
+
+para comentar varias linhas usar ctrol + /;
+
+ancoras são usadas para repetir o valor ao qual ela está ancorada podendo ser útilizada no resto no arquivo para declarar uma ancora útiliza o &nomeancora e para usar ela útiliza o *nomeancora ( pode ser útilizado ancoras em sêquencias );

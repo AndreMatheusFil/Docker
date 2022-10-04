@@ -1,0 +1,35 @@
+#errado
+
+host: andre
+datacenter:
+  location: Curitiba
+  router: 42
+roles:
+  - web
+  - dns
+
+host: Marcos
+datacenter:
+  location: Curitiba
+  router: 42
+roles:
+  - web
+  - dns
+
+#certo
+
+host1: andre
+datacenter1:
+  location: Curitiba
+  router: 42
+roles1:
+  - web
+  - dns
+
+host2: Marcos
+datacenter2:
+  location: Curitiba
+  router: 42
+roles2:
+  - web
+  - dns

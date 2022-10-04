@@ -8,4 +8,23 @@ locais:
   -Curitiba
   -São Paulo
 
+existe dois estilos em YAML o block e flow;
+
+block:
+
+host: andre
+datacenter:
+  location: Curitiba
+  router: 42
+roles:
+  - web
+  - dns
+
+flow:
+
+host: andre
+datacenter: {  location: 
+  Curitiba,  router: 42  }
+roles: [ web, dns ]
+
 

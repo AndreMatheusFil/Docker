@@ -1,0 +1,16 @@
+#block:
+
+hostblock: andre
+datacenterblock:
+  location: Curitiba
+  router: 42
+rolesblock:
+  - web
+  - dns
+
+#flow:
+
+hostflow: andre
+datacenterflow: {  location: 
+  Curitiba,  router: 42  }
+rolesflow: [ web, dns ]

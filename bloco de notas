@@ -104,3 +104,13 @@ roles:
 para comentar varias linhas usar ctrol + /;
 
 ancoras são usadas para repetir o valor ao qual ela está ancorada podendo ser útilizada no resto no arquivo para declarar uma ancora útiliza o &nomeancora e para usar ela útiliza o *nomeancora ( pode ser útilizado ancoras em sêquencias );
+
+os container não persistem dados a menos que tenham Volumes ( Volumes de Dados );
+
+
+Para buildar o Dockerfile usar o comando na pasta onde está criado o Dockerfile 
+
+                Nome do       nome         nome       Nome   Onde está o arquivo que está sendo gerado o build
+                              usuario      da        da tag
+                arquivo       dockhub      imagem                          
+docker build -f Dockerfile -t andrefil147/servidor_web:v1 .

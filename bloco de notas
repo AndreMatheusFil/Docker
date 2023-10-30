@@ -114,3 +114,11 @@ Para buildar o Dockerfile usar o comando na pasta onde está criado o Dockerfile
                               usuario      da        da tag
                 arquivo       dockhub      imagem                          
 docker build -f Dockerfile -t andrefil147/servidor_web:v1 .
+
+Para upar para o docker hub é primeiro nescessário fazer o login via terminal usando
+
+docker login --username=nomedousuario
+
+Depois de logado usar
+
+docker image push nomeimagem:tag
